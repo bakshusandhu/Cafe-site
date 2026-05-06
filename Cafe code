@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Velvet Bean | Artisan Cafe</title>
+    <style>
+        :root {
+            --accent: #d4a373; /* Warm coffee brown */
+            --dark: #1a1a1a;
+            --light: #fefae0;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: 'Helvetica Neue', sans-serif;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=2078&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: var(--light);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 500px;
+            margin: auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 30px;
+            padding: 30px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
+
+        .tagline {
+            font-style: italic;
+            color: var(--accent);
+            margin-bottom: 30px;
+        }
+
+        .menu-preview {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 5px;
+        }
+
+        .btn {
+            display: block;
+            background: var(--accent);
+            color: var(--dark);
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 50px;
+            font-weight: bold;
+            margin-top: 30px;
+            transition: 0.3s;
+        }
+
+        .btn:active { transform: scale(0.95); }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="glass-card">
+            <h1>The Velvet Bean</h1>
+            <p class="tagline">Brewed with Passion, Served with Soul.</p>
+            
+            <div class="menu-preview">
+                <span>Cloud Latte</span>
+                <span>$5.50</span>
+            </div>
+            <div class="menu-preview">
+                <span>Midnight Espresso</span>
+                <span>$4.00</span>
+            </div>
+            <div class="menu-preview">
+                <span>Honey Lavender Scone</span>
+                <span>$4.75</span>
+            </div>
+
+            <a href="https://wa.me/123456789" class="btn">Order Pickup via WhatsApp</a>
+            
+            <p style="margin-top: 20px; font-size: 0.9rem;">
+                📍 123 Fictional Lane, Dream City<br>
+                🕒 Open Daily: 7am - 8pm
+            </p>
+        </div>
+
+        <div class="footer">
+            &copy; 2026 The Velvet Bean Cafe
+        </div>
+    </div>
+
+</body>
+</html>
